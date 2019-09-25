@@ -79,6 +79,19 @@ html, body {
 	padding-top: 10px;
 }
 
+.btn() {
+	padding: 10px 10px;
+	border-radius: 5px;
+	background: @secondary;
+	color: white;
+	border: none;
+}
+.btn-hover {
+	background: white;
+	color: @secondary;
+	border: 1px solid @secondary;
+}
+
 header {
 	display: flex;
 	width: 100%;
@@ -101,7 +114,7 @@ header {
 				color: black;
 			}
 			&:hover {
-				opacity: .6;
+				.btn-hover;
 			}
 		}
 		
@@ -133,16 +146,9 @@ header {
 			padding-bottom: 2%;
 		}
 		button {
-			padding: 10px 10px;
-			border-radius: 5px;
-			background: @secondary;
-			color: white;
-			border: none;
-			
+			.btn;
 			&:hover {
-				cursor: pointer;
-				background: white;
-				color: black;
+				.btn-hover;
 			}
 		}
 		
@@ -224,15 +230,29 @@ header {
 }
 
 .contact-container {
+	margin-top: 20px;
 	.padtop;
 	.title-h2;
-
-	div {
-		padding: 10px 0;
+	.contact-form {
+		div {
+			padding: 10px 10%;
+		}
 		input {
 			width: 80%;
-			left: 20%;
+			padding: 10px;
+			background: @primary;
+			border: 1px solid @secondary;
 		}
+		button {
+			.btn;
+			&:hover {
+				.btn-hover;
+			}
+		}
+		
+	}
+	.message input{
+		padding-bottom: 70px;
 	}
 }
 

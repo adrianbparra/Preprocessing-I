@@ -137,6 +137,11 @@ body {
   margin: 0 auto;
   font-family: 'Oswald', sans-serif;
 }
+.btn-hover {
+  background: white;
+  color: #9b9b9b;
+  border: 1px solid #9b9b9b;
+}
 header {
   display: flex;
   width: 100%;
@@ -161,7 +166,9 @@ header nav a.visited {
   color: black;
 }
 header nav a:hover {
-  opacity: 0.6;
+  background: white;
+  color: #9b9b9b;
+  border: 1px solid #9b9b9b;
 }
 .title {
   padding: 30px 20px;
@@ -198,9 +205,9 @@ header nav a:hover {
   border: none;
 }
 .title .intro button:hover {
-  cursor: pointer;
   background: white;
-  color: black;
+  color: #9b9b9b;
+  border: 1px solid #9b9b9b;
 }
 .info-container {
   padding: 20px 0;
@@ -280,17 +287,35 @@ header nav a:hover {
   background-color: rgba(223, 223, 223, 0.623);
 }
 .contact-container {
+  margin-top: 20px;
   padding-top: 10px;
   font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 1px;
 }
-.contact-container div {
-  padding: 10px 0;
+.contact-container .contact-form div {
+  padding: 10px 10%;
 }
-.contact-container div input {
+.contact-container .contact-form input {
   width: 80%;
-  left: 20%;
+  padding: 10px;
+  background: rgba(223, 223, 223, 0.623);
+  border: 1px solid #9b9b9b;
+}
+.contact-container .contact-form button {
+  padding: 10px 10px;
+  border-radius: 5px;
+  background: #9b9b9b;
+  color: white;
+  border: none;
+}
+.contact-container .contact-form button:hover {
+  background: white;
+  color: #9b9b9b;
+  border: 1px solid #9b9b9b;
+}
+.contact-container .message input {
+  padding-bottom: 70px;
 }
 footer {
   margin-top: 20px;
